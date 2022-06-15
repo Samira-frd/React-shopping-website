@@ -1,0 +1,91 @@
+.mainContainer{
+    background-color: rgb(236, 236, 236);
+    margin: 0 0 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 5px 20px rgb(144, 137, 112);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 20px 180px;
+}
+
+.productLink{
+    text-decoration: none;
+    color: rgb(60, 184, 151);
+    font-weight: bold;
+    font-size: 25px;
+    border-bottom: 3px solid rgb(60, 184, 151);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 0 5px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+
+.productLink:hover{
+    color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    background-color: rgb(60, 184, 151);
+}
+
+.iconContainer{
+    position: relative;
+}
+
+.iconContainer img{
+    width: 45px;
+}
+
+.iconContainer span{
+    position: absolute;
+    bottom: 32px;
+    right: 9.5px;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(60, 184, 151);
+    border: 1px solid rgb(116, 113, 113);
+    box-shadow: 1px 2px 4px rgb(116, 113, 113), -1px -2px 4px rgb(116, 113, 113);
+}
+
+
+/* MQ */
+
+@media (max-width: 1200px){
+    .container{
+        padding: 20px 80px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 555px){
+    .container{
+        padding: 20px 40px;
+    }
+}
