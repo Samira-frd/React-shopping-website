@@ -18,29 +18,35 @@
   }
   
   .data h3 {
-    color: #1a73e8;
+    color: rgb(60, 184, 151);
     margin-bottom: 10px;
   }
   
   .data p {
-    color: #34a853;
+    color: orange;
     font-weight: bold;
   }
   
   .quantity {
-    background: orange;
-    width: 25px;
-    height: 25px;
+    border: 2px dotted orange;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
     display: inherit;
-    line-height: 25px;
+    line-height: 33px;
     border-radius: 3px;
-    color: #fff;
+    color: orange;
     font-weight: bold;
     text-align: center;
-  }
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 1.3rem;
+}
   
   .buttonContainer button {
-    background-color: #1a73e8;
+    background-color: rgb(60, 184, 151);
     border: none;
     color: #fff;
     height: 30px;

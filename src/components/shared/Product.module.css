@@ -45,13 +45,14 @@
   
   .linkContainer a {
     text-decoration: none;
-    color: #1a73e8;
+    color: orange;
     font-size: 0.95rem;
+    border-bottom: 2px dashed orange;
   }
   
   .buttonContainer button {
     font-size: 0.9rem;
-    background-color: #1a73e8;
+    background-color: rgb(60, 184, 151);
     border: none;
     color: #fff;
     height: 30px;
@@ -76,17 +77,24 @@
   }
   
   .buttonContainer button:hover {
-    background-color: #0b499b;
+    background-color: orange;
   }
   
   .counter {
     display: inline-block;
-    width: 20px;
+    width: 25px;
+    height: 25px;
     margin-left: 5px;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1a73e8;
-  }
+    color: rgb(60, 184, 151);
+    border: 3px dotted orange;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
   
   @media (max-width: 1000px) {
     .container {

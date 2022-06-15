@@ -22,7 +22,7 @@ const Product = ({productData}) => {
             <h3>{shorten(productData.title)}</h3>
             <p>{productData.price}</p>
             <div className={styles.linkContainer}>
-                <Link to={`/products/${productData.id}`}>detail</Link>
+                <Link to={`/products/${productData.id}`}>Detail</Link>
                 <div className={styles.buttonContainer}>
                     {quantityCount(state, productData.id) === 1 && <button className={styles.smallButton} onClick={() => dispatch({type: "REMOVE_ITEM", payload: productData})}><img src={trashIcon} alt="bin" style = {{width: "20px"}}/></button>} 
                     {quantityCount(state, productData.id) > 1 && <button className={styles.smallButton} onClick={() => dispatch({type: "DECREASE", payload: productData})}>-</button>}  
